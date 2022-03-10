@@ -94,6 +94,35 @@ footer{
   padding-bottom: 20px;
 }
 
+.overlay-img{
+  /* display: none; */
+  position: relative;
+  top: -165px;
+  left: 135px;
+}
+
+
+.overlay{
+  background-color: var(--cyan);
+  height: 100%;
+  opacity: .3;
+  border-radius: 10px;
+  border: 3px solid hsl(216, 50%, 16%);
+  display: none;
+}
+
+.img-sec:hover .overlay{
+  display: block;
+}
+
+
+
+.pointer{
+  cursor: pointer;
+}
+
+
+
 
 
 
