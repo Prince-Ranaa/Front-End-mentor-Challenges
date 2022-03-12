@@ -42,8 +42,17 @@ body{
 }
 
 /* adding the required width of the image for mobile view  */
-img{
+/* img{
     max-width:375px;
+    display: block;
+    border: 3px solid green;
+} */
+
+.hero-img{
+    background-image: url("/images/image-header-mobile.jpg");
+    height: 300px;
+    width: 100%;
+    background-size: cover;
 }
 
 /* adding the styles for all texts (h1,h2,p) and adding the margin  */
@@ -69,4 +78,70 @@ p{
 
 .highlighted-text{
     color: var(--accent);
+}
+
+
+
+
+/* To add the over lay we are using this code  */
+.hero-img{    
+    position: relative;
+}
+
+.overlay::before{
+    content: "";
+    background-color: var(--accent);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .5;
+}
+
+/* overlay part ends here  */
+
+
+
+@media (min-width:1200px){
+    .main-container{
+        width: 80%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .hero-img{
+        background-image: url("/images/image-header-desktop.jpg");
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .texts{
+        width: 100%;
+    }
+
+    .col{
+        display: flex;
+        padding-top: 50px;
+        text-align: left;
+    }
+
+    .texts div{
+        width: 60%;
+        margin: 0 auto ;
+    }
+
+    .top-text{
+        padding-top: 50px;
+        text-align: left;
+    }
+
+    .top-text p{
+        margin-top: 30px;
+    }
+
+
+    
 }
