@@ -76,6 +76,16 @@ button{
     color: var(--dark-cyan);
     font-size: 18px;
     font-family: "lexend deca";
+    border: 2px solid white ;
+
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid white ;
+    background-color: inherit;
+    color: white;
+
 }
 
 
