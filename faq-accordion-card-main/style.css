@@ -1,0 +1,100 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: hsl(273, 75%, 66%);
+}
+
+header,p{
+    font-size: 14px;
+    color: hsl(237, 12%, 33%);
+    margin: 10px 0 0 0;
+    
+}
+
+/* styling the main container  */
+.main-container{
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 375px;
+    margin-top: 130px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+
+/* styling of hero image  */
+.hero-img{
+    width: 80%;
+    margin: -135px auto 0;
+}
+
+.img-shadow{
+    width: 100%;
+    margin: -100px auto 40px 0;
+}
+
+/* styling heading  */
+header{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+/* styling the text-container  */
+.text-container{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+
+
+
+/* setting the acc-btn  */
+.acc-btn{
+    cursor: pointer;    
+}
+
+.acc-btn:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+
+/* setting the acc-content and hiding it  */
+.acc-content{
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+    margin: 10px 0 20px 0;
+}
+
+/* adding the divider  */
+section{
+    border-bottom: 2px solid hsl(240, 5%, 91%);
+}
+
+
+.active{
+    font-weight: 700;
+}
+
+
+/* setting the arrow img to right  */
+.arrow-img{
+    float: right;
+    width: 12px;
+    margin: 6px 6px 0 0;
+    
+}
+
+
+

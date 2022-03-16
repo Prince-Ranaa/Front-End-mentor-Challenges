@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="main-container">
+    <div class="hero-img">
+      <img src="/images/illustration-woman-online-mobile.svg" alt="">
+      <img src="/images/bg-pattern-mobile.svg" alt="" class="img-shadow">
+    </div>
+
+
+    <section class="text-container">
+
+      <header>FAQ</header>
+      <section>
+        <p class="acc-btn">How many team members can I invite? <img src="/images/icon-arrow-down.svg" alt=""
+            class="arrow-img"></p>
+
+        <p class="acc-content">You can invite up to 2 additional users on the Free plan. There is no limit on
+          team members for the Premium plan.</p>
+      </section>
+
+
+
+      <section>
+        <p class="acc-btn">What is the maximum file upload size? <img src="/images/icon-arrow-down.svg" alt=""
+            class="arrow-img"></p>
+
+        <p class="acc-content">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      </section>
+
+
+
+      <section>
+        <p class="acc-btn">How do I reset my password? <img src="/images/icon-arrow-down.svg" alt="" class="arrow-img">
+        </p>
+
+        <p class="acc-content">Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.</p>
+      </section>
+
+
+
+      <section>
+        <p class="acc-btn">Can I cancel my subscription? <img src="/images/icon-arrow-down.svg" alt=""
+            class="arrow-img"></p>
+
+        <p class="acc-content">Yes! Send us a message and we’ll process your request no questions asked.</p>
+      </section>
+
+
+
+      <section>
+        <p class="acc-btn">Do you provide additional support? <img src="/images/icon-arrow-down.svg" alt=""
+            class="arrow-img"></p>
+
+        <p class="acc-content">Chat and email support is available 24/7. Phone lines are open during normal business
+          hours.</p>
+      </section>
+
+    </section>
+  </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+
+
+  <script>
+    let acc = document.getElementsByClassName("acc-btn")
+    let ch = document.getElementsByClassName("arrow-img")
+
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active")
+        let panel = this.nextElementSibling;
+        if (panel.style.height) {
+          panel.style.height = null;
+        }
+        else {
+          panel.style.height = panel.scrollHeight + "px";
+        }
+
+      })
+    }
+  </script>
+</body>
+
+</html>
