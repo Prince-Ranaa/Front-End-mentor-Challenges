@@ -1,0 +1,182 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 66%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "spartan";
+}
+
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-text-container{
+    width: 48%;
+    font-size: 20px;
+}
+
+.hero-text-container h1{
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 16px;
+    color: hsl(300, 43%, 22%);
+}
+
+
+.reviews-container{
+    width: 48%;
+}
+
+.review{
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.text-review p{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.review-2{
+    margin: 0 auto 20px;
+}
+
+.review-3{
+    float: right;
+}
+
+
+.verified-buyer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.card{
+    background-color: hsl(300, 43%, 22%);
+    width: 32%;
+    border-radius: 10px;
+    padding: 50px;
+    color: hsl(300, 24%, 96%);
+}
+
+.img__name{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.img__name img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.name{
+    font-weight: 600;
+}
+
+.highlight{
+    font-weight: 0;
+    color: hsl(333, 80%, 67%);
+}
+
+
+.bg-top{
+    position: absolute;
+    top: -150px;
+    left: -50px;
+}
+
+.bg-bottom{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    z-index: -1;
+
+}
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main{
+        margin: 0 auto;
+        display: block;
+        margin: 400px auto;
+    }
+
+
+    .bg-top, .bg-bottom{
+        display: none;
+    }
+
+    .top{
+        display: block;
+        border: 10px solid white;
+    }
+
+    .hero-text-container h1{
+        margin-bottom: 30px;
+    }
+
+    .hero-text-container p{
+        margin-bottom: 30px;
+    }
+
+    .hero-text-container{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    }
+
+    .reviews-container{
+        width: 100%;
+    }
+
+    .review{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .star-review{
+        margin-bottom: 10px;
+    }
+    
+
+    .verified-buyer{
+        display: block;
+    }
+
+    .card{
+        width: 100%;
+        margin: 20px auto ;
+    }
+
+    
+}
