@@ -19,7 +19,6 @@ main {
     left: 50%;
     transform: translate(-50%, 10%);
     width: 375px;
-    border: 2px solid red;
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
@@ -28,7 +27,6 @@ main {
 /* ---------- hero-img ------------ */
 .hero-img-container {
     width: 100%;
-    border: 2px solid red;
     max-height: 250px;
     overflow: hidden;
 }
@@ -41,7 +39,6 @@ main {
 /* ---------- text-container ----------- */
 .text-container {
     width: 80%;
-    border: 2px solid orange;
     margin: auto;
 }
 
@@ -62,7 +59,6 @@ main {
 footer {
     position: relative;
     width: 80%;
-    border: 2px solid red;
     margin: 30px auto 20px;
     display: flex;
     align-items: center;
@@ -86,7 +82,6 @@ footer {
 /* ------ footer-other --------- */
 .footer-others {
     width: 100%;
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -127,7 +122,6 @@ footer {
     height: 90px;
     background-color: hsl(217, 19%, 35%);
     width: 100%;
-    border: 2px solid red;
     display: flex;
     align-items: center;
     display: hidden;
@@ -166,7 +160,6 @@ footer {
     .hero-img-container {
         width: 400px;
         max-height: 100%;
-        border: 2px solid red;
         overflow: hidden;
     }
 

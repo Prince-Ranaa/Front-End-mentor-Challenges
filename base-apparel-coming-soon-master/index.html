@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+
+</head>
+
+<body>
+
+
+  <main>
+
+    <div class="container">
+      <div class="logo">
+        <img src="/images/logo.svg" alt="">
+      </div>
+
+      <div class="hero-img">
+        <img src="/images/hero-mobile.jpg" alt="">
+      </div>
+
+      <div class="text-container">
+
+        <h1><span>We're</span> coming soon</h1>
+
+
+        <p>Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      </div>
+
+
+      <div class="form">
+        <input type="text" placeholder="Email Address" id="email">
+        <span class="error_img"><img src="/images/icon-error.svg" alt=""></span>
+        <span class="error_msg">Please provide a valid Email</span>
+
+        <button><img src="/images/icon-arrow.svg" alt=""></button>
+      </div>
+    </div>
+
+
+
+
+    <div class="desktop-hero-img">
+      <img src="/images/hero-desktop.jpg" alt="">
+    </div>
+
+  </main>
+
+
+  <script>
+    var validation = /([a-zA-Z0-9]+)\@([a-zA-Z]+)\.([a-zA-Z]{2,3})/
+
+    var email = document.getElementById("email").value
+
+    document.getElementsByTagName("button")[0].addEventListener("click", function validate() {
+      email = document.getElementById("email").value
+
+      if (email.match(validation)) {
+
+        document.getElementsByClassName("error_img")[0].style.display = "none"
+        document.getElementsByClassName("error_msg")[0].style.opacity = "0"
+        alert("Submitted")
+
+      }
+      else {
+        document.getElementsByClassName("error_img")[0].style.display = "block"
+        document.getElementsByClassName("error_msg")[0].style.opacity = "1"
+        document.getElementsByTagName("input")[0].style.border = "2px solid hsl(0, 93%, 68%)"
+
+      }
+    })
+
+
+
+  </script>
+</body>
+
+</html>
