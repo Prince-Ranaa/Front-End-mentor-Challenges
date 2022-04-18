@@ -11,6 +11,10 @@ body {
 
 }
 
+img {
+    object-fit: fill;
+}
+
 .logo {
     margin-bottom: 20px;
     margin-left: 50px;
@@ -22,7 +26,6 @@ body {
 
 main {
     max-width: 375px;
-    border: 2px solid black;
     margin: 30px auto;
 }
 
@@ -33,6 +36,7 @@ main {
 .hero-img img {
     display: block;
     width: 100%;
+    object-fit: fill;
 }
 
 .text-container {
@@ -132,6 +136,7 @@ main {
         width: 100%;
         height: 100%;
         flex: 1;
+        object-fit: fill;
     }
 
 
@@ -146,7 +151,6 @@ main {
     }
 
     .container {
-        border: 3px solid red;
         width: 100%;
         padding: 5%;
     }
