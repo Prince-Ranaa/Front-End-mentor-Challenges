@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.container {
+    width: 375px;
+    background: url("/images/bg-intro-mobile.png");
+    background-color: hsl(0, 100%, 74%);
+    margin: 10px auto 20px;
+    padding: 30px;
+}
+
+.text h2 {
+    width: 80%;
+    margin: 60px auto 30px;
+    text-align: center;
+}
+
+.text p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 5px 0px 1px hsl(249, 10%, 26%);
+}
+
+.card p {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.card span {
+    font-weight: 600;
+}
+
+form {
+    background-color: white;
+    color: black;
+    margin: 20px auto 50px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px 2px hsl(255, 4%, 42%);
+}
+
+form input {
+    display: block;
+    width: 100%;
+    margin: 10px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form input::placeholder {
+    font-weight: 600;
+}
+
+form button {
+    margin-top: 18px;
+    width: 100%;
+    padding: 14px 20px;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 2px 0px 2px hsl(154, 61%, 44%);
+}
+
+form footer {
+    margin: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+form span {
+    font-weight: 600;
+    color: hsl(0, 100%, 74%);
+    cursor: pointer;
+}
+
+
+
+/* ----- validation -----  */
+
+.fName,
+.lName,
+.pass,
+.email {
+    position: relative;
+}
+
+.error_img {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+.error-text {
+    display: block;
+    text-align: right;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.email_error-text {
+    display: block;
+    text-align: right;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.email_error_img {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+
+@media screen and (min-width:780px) {
+    body {
+        background: url(/images/bg-intro-desktop.png);
+        background-size: cover;
+        background-color: hsl(0, 100%, 74%);
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        background: inherit;
+        padding: 0;
+    }
+
+    .text {
+        flex: 1;
+    }
+
+    .form {
+        flex: 1;
+        padding: 0 100px 0 0;
+    }
+
+    .text h2 {
+        width: 70%;
+        margin: 20% auto 30px;
+        text-align: left;
+        font-size: 42px;
+    }
+
+    .text p {
+        width: 70%;
+        text-align: left;
+        margin: 0 auto 30px;
+    }
+
+    form input {
+        padding: 16px 20px;
+        margin: 20px auto 0;
+    }
+}

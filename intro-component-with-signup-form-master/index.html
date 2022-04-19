@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <section class="text">
+      <h2>Learn to code by watching others</h2>
+
+
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </section>
+
+    <section class="form">
+      <div class="card">
+        <p><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</p>
+      </div>
+
+      <form action="">
+        <div class="fName">
+          <input type="text" placeholder="First Name" class="validation" required>
+          <img src="/images/icon-error.svg" alt="" class="error_img">
+          <span class="error-text">First Name cannot be empty</span>
+        </div>
+
+        <div class="lName">
+          <input type="text" placeholder="Last Name" class="validation">
+          <img src="/images/icon-error.svg" alt="" class="error_img">
+          <span class="error-text">Last Name cannot be empty</span>
+        </div>
+
+        <div class="email">
+          <input type="text" placeholder="Email Address" class="email-validation">
+          <img src="/images/icon-error.svg" alt="" class="email_error_img">
+          <span class="email_error-text">Looks like this is not an email</span>
+        </div>
+
+
+        <div class="pass">
+          <input type="text" placeholder="Password" class="validation">
+          <img src="/images/icon-error.svg" alt="" class="error_img">
+          <span class="error-text">Password cannot be empty</span>
+        </div>
+
+
+
+
+        <button onclick="check()">Claim your free trial</button>
+
+        <footer>
+          By clicking the button, you are agreeing to our <span class="red-text">Terms and Services</span>
+        </footer>
+      </form>
+
+
+    </section>
+  </div>
+
+
+  <script>
+    var input = document.getElementsByClassName("validation")
+    var txt = document.getElementsByClassName("error-text")
+    var err = document.getElementsByClassName("error_img")
+
+    var email = document.getElementsByClassName("email-validation")[0].value
+    var emailtxt = document.getElementsByClassName("email_error-text")[0]
+
+    var validation = /([a-zA-Z0-9]+)\@([a-zA-Z]+)\.([a-zA-Z]{2,3})/
+
+    function check() {
+
+      if (email.match(validation)) {
+
+      }
+      else {
+        document.getElementsByClassName("email_error-text")[0].style.opacity = 1
+        document.getElementsByClassName("email_error_img")[0].style.opacity = 1
+      }
+
+
+
+      for (let i = 0; i < input.length; i++) {
+        if (input[i].value == '') {
+          txt[i].style.opacity = 1
+          err[i].style.opacity = 1
+        }
+        else {
+          txt[i].style.opacity = 0
+          err[i].style.opacity = 0
+        }
+      }
+
+
+
+
+    }
+  </script>
+
+</body>
+
+</html>
