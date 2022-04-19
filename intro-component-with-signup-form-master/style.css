@@ -108,7 +108,7 @@ form span {
     position: absolute;
     top: 50%;
     right: 5%;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
     opacity: 0;
 }
 
@@ -132,7 +132,7 @@ form span {
     position: absolute;
     top: 50%;
     right: 5%;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
     opacity: 0;
 }
 
