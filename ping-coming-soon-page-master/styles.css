@@ -42,11 +42,16 @@ input {
     border: 1px solid hsl(223, 87%, 63%);
     padding: 12px 20px;
     border-radius: 50px;
-    margin-bottom: 20px;
 }
 
 input:focus {
     outline: none;
+}
+
+#error-msg {
+    color: hsl(354, 100%, 66%);
+    font-weight: 300;
+    font-size: 12px;
 }
 
 button {
@@ -57,7 +62,7 @@ button {
     background-color: hsl(223, 87%, 63%);
     color: white;
     box-shadow: 0px 7px 5px 2px hsl(218, 41%, 95%);
-    margin-bottom: 50px;
+    margin: 30px auto 50px;
     cursor: pointer;
 }
 
@@ -81,6 +86,7 @@ button {
     padding-top: 30%;
     color: hsl(223, 87%, 63%);
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .icon i:hover {
@@ -91,4 +97,58 @@ button {
 footer {
     font-size: 16px;
     color: hsl(0, 0%, 59%);
+}
+
+
+
+@media screen and (min-width:768px) {
+
+
+
+    .container {
+        width: 100%;
+        max-width: 1000px;
+        padding: 0 30px;
+    }
+
+    form {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .input {
+        flex: 3;
+    }
+
+    input {
+        flex: 1;
+        width: 100%;
+        max-width: 1200px;
+        border: 1px solid hsl(223, 87%, 63%);
+        padding: 12px 20px;
+        border-radius: 50px;
+    }
+
+    .btn {
+        flex: 1;
+    }
+
+    button {
+        flex: 1;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    #error-msg {
+        display: block;
+        color: hsl(354, 100%, 66%);
+        font-weight: 300;
+        text-align: left;
+        margin: 10px 5%;
+    }
+
+    .heading {
+        font-size: 42px;
+    }
 }

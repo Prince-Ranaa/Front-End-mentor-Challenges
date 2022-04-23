@@ -20,15 +20,20 @@
 
 <body>
 
-  <div class="container">
+  <main class="container">
     <img src="/images/logo.svg" alt="" class="logo">
-    <p>We are launching <span>soon!</span></p>
+    <p class="heading">We are launching <span>soon!</span></p>
     <p class="sm_bold">Subscribe and get notified</p>
 
-    <form onsubmit="validation()">
-      <input type="text" placeholder="Your email address...">
+    <form onsubmit="return validation()">
+      <div class="input">
+        <input type="text" placeholder="Your email address...">
+        <span id="error-msg"></span>
+      </div>
 
-      <button type="submit">Notify Me</button>
+      <div class="btn">
+        <button type="submit">Notify Me</button>
+      </div>
     </form>
 
     <img src="/images/illustration-dashboard.png" alt="" class="hero_bg">
@@ -50,20 +55,24 @@
     <footer>
       &copy; Copyright Ping. All rights reserved.
     </footer>
-  </div>
+  </main>
 
   <script>
 
     var input = document.getElementsByTagName("input")[0]
+    var pattern = /([a-zA-Z0-9]+)\@([a-zA-Z]+)\.([a-zA-Z]{3})/
 
     function validation() {
-      if (input.value == '') {
-        alert("emp")
-        console.log(input.value);
+      if (input.value != "" && input.value.match(pattern)) {
+        alert("subimitted")
       }
-      else
-        alert("not emp")
-      console.log(input.value);
+      else {
+        input.style.borderColor = "hsl(354, 100%, 66%)";
+        input.placeholder = "example@email.com";
+        document.getElementById("error-msg").innerHTML = "Please provide a valid email address"
+        return false
+      }
+
 
     }
 
