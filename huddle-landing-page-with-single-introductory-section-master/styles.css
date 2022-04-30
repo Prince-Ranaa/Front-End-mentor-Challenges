@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+body {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main {
+    position: relative;
+    background: hsl(257, 40%, 49%);
+    background-size: cover;
+    max-width: 320px;
+    width: 100%;
+    z-index: 0;
+    margin: 0 auto;
+}
+
+.m-bg-img img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.d-bg-img {
+    display: none;
+}
+
+.logo {
+    width: 150px;
+    margin: 20px 30px 40px;
+}
+
+.flex img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.text {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+button {
+    display: block;
+    color: hsl(257, 40%, 49%);
+    width: 80%;
+    margin: 0 auto 70px;
+    padding: 10px 24px;
+    border-radius: 50px;
+    border: none;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    box-shadow: 0 0 10px 1px rgb(58, 58, 58);
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+footer {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+footer i {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.fb {
+    padding: 10px 13px;
+}
+
+footer i+i {
+    margin-left: 20px;
+}
+
+footer i:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+@media screen and (min-width:768px) {
+    main {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 36px;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    .logo {
+        width: 200px;
+        margin: 50px 7% 40px;
+    }
+
+    .m-bg-img {
+        display: none;
+    }
+
+    .d-bg-img {
+        position: absolute;
+        display: block;
+        z-index: -1;
+        height: 100%;
+    }
+
+    .d-bg-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .flex {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .image {
+        flex: 1;
+        width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .text {
+        flex: .8;
+    }
+
+    button {
+        margin: 0;
+        padding: 16px 0;
+        width: 40%;
+        font-size: 16px;
+        box-shadow: 0 0 10px 1px rgb(58, 58, 58);
+    }
+
+    footer {
+        text-align: right;
+        margin-right: 50px;
+    }
+}
