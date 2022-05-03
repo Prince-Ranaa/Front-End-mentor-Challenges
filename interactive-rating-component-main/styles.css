@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 5%;
+    color: hsl(0, 0%, 100%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+}
+
+
+.f-container {
+    max-width: 375px;
+    width: 100%;
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.icon img {
+    padding: 13px;
+    background-color: hsl(214, 10%, 27%);
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-btn {
+    padding: 10px 16px;
+    border-radius: 50px;
+    background-color: hsl(214, 10%, 27%);
+}
+
+.rating-btn:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 50px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+button:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.selected {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+
+/* === s-container === */
+
+.s-container {
+    max-width: 375px;
+    width: 100%;
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    display: none;
+}
+
+.s-container h1 {
+    font-weight: 600;
+}
+
+
+.image {
+    width: 150px;
+    margin: 20px auto 30px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.main-txt p {
+    background-color: hsl(213, 33%, 21%);
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: hsl(25, 97%, 53%);
+    width: max-content;
+    margin: 0 auto 20px;
+}
