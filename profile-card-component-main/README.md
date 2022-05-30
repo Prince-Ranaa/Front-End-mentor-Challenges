@@ -1,3 +1,7 @@
+
+live preview:
+https://eager-torvalds-6f4043.netlify.app
+
 # Frontend Mentor - Profile card component
 
 ![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)

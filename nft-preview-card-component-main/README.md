@@ -1,3 +1,7 @@
+
+Can visit the live preview of site with the following links:
+https://prince-rana-2nd.netlify.app
+
 # Frontend Mentor - NFT preview card component
 
 ![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)

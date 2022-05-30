@@ -1,3 +1,9 @@
+
+Can visit the live preview of site with the following links:
+https://focused-goldstine-4e707f.netlify.app
+
+
+
 # Frontend Mentor - QR code component
 
 ![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
