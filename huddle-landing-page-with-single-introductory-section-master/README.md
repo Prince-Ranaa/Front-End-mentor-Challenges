@@ -1,3 +1,5 @@
+Live Preview: https://luxury-nasturtium-816f26.netlify.app
+
 # Frontend Mentor - Huddle landing page with single introductory section
 
 ![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)

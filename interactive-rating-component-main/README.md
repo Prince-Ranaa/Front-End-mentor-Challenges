@@ -1,3 +1,5 @@
+Live Preview: https://friendly-panda-9c3966.netlify.app
+
 # Frontend Mentor - Interactive rating component
 
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
