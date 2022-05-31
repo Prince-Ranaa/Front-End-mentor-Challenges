@@ -33,34 +33,31 @@
 
       <form action="">
         <div class="fName">
-          <input type="text" placeholder="First Name" class="validation" required>
+          <input type="text" placeholder="First Name" class="validation" name="fname" required>
           <img src="/images/icon-error.svg" alt="" class="error_img">
           <span class="error-text">First Name cannot be empty</span>
         </div>
 
         <div class="lName">
-          <input type="text" placeholder="Last Name" class="validation">
+          <input type="text" placeholder="Last Name" class="validation" required>
           <img src="/images/icon-error.svg" alt="" class="error_img">
           <span class="error-text">Last Name cannot be empty</span>
         </div>
 
         <div class="email">
-          <input type="text" placeholder="Email Address" class="email-validation">
+          <input type="text" placeholder="Email Address" class="email-validation" required>
           <img src="/images/icon-error.svg" alt="" class="email_error_img">
           <span class="email_error-text">Looks like this is not an email</span>
         </div>
 
 
         <div class="pass">
-          <input type="text" placeholder="Password" class="validation">
+          <input type="text" placeholder="Password" class="validation" required>
           <img src="/images/icon-error.svg" alt="" class="error_img">
           <span class="error-text">Password cannot be empty</span>
         </div>
 
-
-
-
-        <button onclick="check()">Claim your free trial</button>
+        <button type="submit" onclick="check()">Claim your free trial</button>
 
         <footer>
           By clicking the button, you are agreeing to our <span class="red-text">Terms and Services</span>
@@ -104,11 +101,10 @@
           err[i].style.opacity = 0
         }
       }
-
-
-
-
     }
+
+
+
   </script>
 
 </body>
