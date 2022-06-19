@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="main-container">
+    <header>
+      <div class="header-left">
+        <p>My balance</p>
+        <span>$921.48</span>
+      </div>
+
+      <img src="./images/logo.svg" alt="">
+    </header>
+
+    <div class="price">
+      <h2>Spending - Last 7 days</h2>
+
+      <div class="graph">
+        <div class="bar mon-bar">
+          <p class="bar-value">100</p>
+        </div>
+
+        <div class="bar tue-bar">
+          <p class="bar-value">100</p>
+        </div>
+
+        <div class="bar wed-bar active">
+          <p class="bar-value">100</p>
+        </div>
+
+        <div class="bar thu-bar">
+          <p class="bar-value">100</p>
+        </div>
+
+        <div class="bar fri-bar">
+          <p class="bar-value">100</p>
+        </div>
+
+        <div class="bar sat-bar">
+          <p class="bar-value">100</p>
+        </div>
+
+        <div class="bar sun-bar">
+          <p class="bar-value">100</p>
+        </div>
+      </div>
+
+      <div class="days">
+        <p class="day"></p>
+        <p class="day">tue</p>
+        <p class="day">wed</p>
+        <p class="day">thu</p>
+        <p class="day">fri</p>
+        <p class="day">sat</p>
+        <p class="day">sun</p>
+      </div>
+
+
+      <hr>
+
+      <div class="details">
+        <div class="total">
+          <p>Total this month</p>
+          <span id="total-amt">$100</span>
+        </div>
+
+        <div class="percent">
+          <span>+2.4%</span>
+          <p>from last month</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: hsl(27, 66%, 92%);
+    font-family: "DM sans", sans-serif;
+    font-weight: 400;
+
+}
+
+.main-container {
+    max-width: 500px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: hsl(10, 79%, 65%);
+}
+
+.header-left span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.price {
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.graph {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    align-items: flex-end;
+}
+
+.bar {
+    height: 100px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: hsl(10, 79%, 65%);
+    position: relative;
+}
+
+.bar-value {
+    position: absolute;
+    top: -30px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    visibility: hidden;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    gap: 10px;
+}
+
+hr {
+    margin: 30px 0;
+    background: hsla(28, 10%, 53%, 0.511);
+    height: 2px;
+    border: none;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.details p {
+    color: gray;
+}
+
+.total span {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.percent span {
+    font-weight: 700;
+}
+
+.bar:hover .bar-value {
+    visibility: visible;
+}
+
+.active {
+    background-color: hsl(186, 34%, 60%);
+}
+
+
+
+.bar:hover {
+    background-color: rgb(250, 167, 163);
+    cursor: pointer;
+}
+
+.active:hover {
+    background-color: hsla(186, 34%, 60%, 0.694);
+    cursor: pointer;
+}
